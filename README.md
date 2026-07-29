@@ -1,6 +1,5 @@
-# cbg-maps-public
-Centre for Biodiversity Genomics
-Global Lot Sampling Dashboard
+# Centre for Biodiversity Genomics
+# Global Lot Sampling Dashboard
 
 Features
 - Interactive ecoregion map
