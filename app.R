@@ -1,4 +1,12 @@
 library(shiny)
+library(readr)
+library(dplyr)
+library(sf)
+library(leaflet)
+library(rnaturalearth)
+library(bslib)
+library(htmlwidgets)
+library(webshot2)
 
 source("R/map_builder.R")
 source("R/export_map.R")
