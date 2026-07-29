@@ -1,4 +1,12 @@
+library(shiny)
+
 source("R/map_builder.R")
+source("R/export_map.R")
+source("R/github_data.R")
+source("R/load_ecoregions.R")
+source("R/helpers.R")
+source("R/legends.R")
+source("R/observers.R")
 
 current_map <- reactive({
 
