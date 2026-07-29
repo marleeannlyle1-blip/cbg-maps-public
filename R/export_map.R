@@ -1,3 +1,7 @@
+# Dependencies:
+# htmlwidgets
+# webshot2
+
 create_export_widget <- function(
     current_map,
     cbg_logo = "CBG_logo.png",
