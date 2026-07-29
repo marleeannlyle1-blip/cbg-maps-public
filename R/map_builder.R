@@ -1,3 +1,8 @@
+# Dependencies:
+# sf
+# dplyr
+# leaflet
+
 build_map <- function(
   ecoregions_all,
   world,
@@ -7,25 +12,21 @@ build_map <- function(
   point_size
 ) {
 
-  library(sf)
-  library(dplyr)
-  library(leaflet)
-
 # Convert to sf
-    pts_sf <- st_as_sf(
+    pts_sf <- sf::st_as_sf(
       spatial_points(),
       coords = c("Lot_longitude", "Lot_latitude"),
       crs = 4326
     )
     
     # Join to ecoregions
-    pts_join <- st_join(
+    pts_join <- sf::st_join(
       pts_sf,
       ecoregions_all
     )
     
     # Count lots per ecoregion
-    eco_counts <- pts_join %>%
+    eco_counts <- dplyr::summarise %>%
       st_drop_geometry() %>%
       group_by(eco_name) %>%
       summarise(
@@ -56,7 +57,7 @@ build_map <- function(
       world$n_lots
     )
     
-    m <- leaflet(
+    m <- leaflet::leaflet(
       options = leafletOptions(
         preferCanvas = TRUE,
         zoomControl = FALSE
