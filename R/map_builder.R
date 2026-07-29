@@ -2,6 +2,7 @@
 # sf
 # dplyr
 # leaflet
+# scales
 
 build_map <- function(
   ecoregions_all,
@@ -26,11 +27,11 @@ build_map <- function(
     )
     
     # Count lots per ecoregion
-    eco_counts <- dplyr::summarise %>%
-      st_drop_geometry() %>%
-      group_by(eco_name) %>%
-      summarise(
-        lot_count = n(),
+    eco_counts <- pts_join %>%
+      sf::st_drop_geometry() %>%
+      dplyr::group_by(eco_name) %>%
+      dplyr::summarise(
+        lot_count = dplyr::n(),
         .groups = "drop"
       )
     
