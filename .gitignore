@@ -1,0 +1,19 @@
+# RStudio
+.Rproj.user
+
+# R session
+.Rhistory
+.RData
+.Ruserdata
+
+# Credentials
+.Renviron
+
+# Temporary exports
+*.html
+*.png
+*.jpg
+
+# OS files
+.DS_Store
+Thumbs.db
