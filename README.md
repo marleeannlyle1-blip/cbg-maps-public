@@ -1,10 +1,14 @@
-# Centre for Biodiversity Genomics Global Lot Sampling Dashboard
+# CBG Global Lot Sampling Dashboard
 
 Features
-- Interactive ecoregion map
-- Lot visualization
-- Export to PNG
-- Ecoregion analytics
+
+- Search ecoregions
+- Search projects
+- Project boundary highlighting
+- Export current view
+- Country lot summaries
+
 
 Data
+
 Private datasets are maintained separately and are not included in this repository.
